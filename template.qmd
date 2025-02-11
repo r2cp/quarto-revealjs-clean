@@ -7,7 +7,7 @@ html-math-method:
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
   - name: Your Name
-    orcid: 0000-0000-0000-0000
+    # orcid: 0000-0000-0000-0000
     email: alias@email.com
     affiliations: Your Institution
 date: last-modified
@@ -42,7 +42,7 @@ Special classes for emphasis
 Cross-references
 
 - `.button` class provides a Beamer-like button, e.g.
-[[Summary]{.button}](#sec-summary)
+[[Summary]{.button}](#see-our-longer-demo-slides)
 
 ## Want more?
 
@@ -82,3 +82,24 @@ quarto use template grantmcdermott/quarto-revealjs-clean
 ```{.bash}
 quarto use template grantmcdermott/quarto-revealjs-clean-demo
 ```
+
+## Callout Notes
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+# Some title {background-image="images/bg-mayan-background.png"}

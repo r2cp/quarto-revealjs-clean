@@ -9,5 +9,10 @@ contributes:
       menu:
         side: left
       slide-number: true
+      show-slide-number: all 
       date-format: long
+      title-slide-attributes: 
+        data-background-image: images/bg-mayan-background.png
+        data-background-opacity: "0.8"
+      logo: images/bg-logo.png
 
