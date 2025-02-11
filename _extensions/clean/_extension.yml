@@ -15,4 +15,7 @@ contributes:
         data-background-image: images/bg-mayan-background.png
         data-background-opacity: "0.8"
       logo: images/bg-logo.png
+      html-math-method:
+        method: mathjax
+        url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
