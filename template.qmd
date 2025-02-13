@@ -100,3 +100,7 @@ This is an example of a 'folded' caution callout that can be expanded by the use
 :::
 
 # Some title {background-image="images/bg-mayan-background.png"}
+
+# [Some other title]{style="color: #ffffff;"} {background-image="images/bg-green-background.jpg"}
+
+# {background-image="images/bg-nature-background.png"}
