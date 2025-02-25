@@ -12,10 +12,27 @@ contributes:
       show-slide-number: all 
       date-format: long
       title-slide-attributes: 
-        data-background-image: images/bg-mayan-background.png
-        data-background-opacity: "0.8"
-      logo: images/bg-logo.png
+        data-background-image: images/bg/bg-background-portrait.jpg
+        data-background-size: contain
+      logo: images/bg/bg-logo.jpg
       html-math-method:
         method: mathjax
         url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-
+      include-after: |
+        <script type="text/javascript">
+          Reveal.on('ready', event => {
+            if (event.indexh === 0) {
+              document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+            }
+          });
+          Reveal.addEventListener('slidechanged', (event) => {
+            if (event.indexh === 0) {
+              Reveal.configure({ slideNumber: null });
+              document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+            }
+            if (event.indexh === 1) { 
+              Reveal.configure({ slideNumber: 'c' });
+              document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+            }
+          });
+        </script>

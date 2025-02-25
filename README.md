@@ -6,7 +6,7 @@ A minimalist and elegant presentation theme for Quarto Reveal.js, inspired by Ky
 Click the screenshot below to be taken to a
 [live demo](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html).
 
-[![](clean-title.png "live demo")](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html)
+This theme has been modified to use at DIE-BG. 
 
 ## Use
 

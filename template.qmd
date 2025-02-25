@@ -4,7 +4,6 @@ subtitle: A subtitle
 format: clean-revealjs
 author:
   - name: Your Name
-    # orcid: 0000-0000-0000-0000
     email: alias@email.com
     affiliations: Your Institution
 date: last-modified
@@ -99,8 +98,12 @@ This is an example of a callout with a title.
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
 :::
 
-# Some title {background-image="images/bg-mayan-background.png"}
+# Some title {background-image="images/bg/bg-background-mayan.png"}
 
-# [Some other title]{style="color: #ffffff;"} {background-image="images/bg-green-background.jpg"}
+# [Some other title]{style="color: #000000;"} {background-image="images/bg/bg-background-green-bottom.jpg"}
 
-# {background-image="images/bg-nature-background.png"}
+## Bottom slide {background-image="images/bg/bg-background-green-bottom.jpg"}
+
+## Side content slide {background-image="images/bg/bg-background-green-side.jpg"}
+
+# {background-image="images/bg/bg-background-green-end.jpg"}
