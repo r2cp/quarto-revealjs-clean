@@ -13,8 +13,7 @@ date: last-modified
 
 ### This is a subtitle
 
-Here we have some text that may run over several lines of the slide frame,
-depending on how long it is.
+Here we have some text that may run over several lines of the slide frame, depending on how long it is.
 
 - first item 
     - A sub item
@@ -27,57 +26,22 @@ can be used with this theme, even if we don't highlight them here.
 
 ## Additional theme classes
 
-### Some extra things you can do with the clean theme
+### Some extra things you can do with the clean-bg theme
 
 Special classes for emphasis
 
 - `.alert` class for default emphasis, e.g. [important note]{.alert}.
-- `.fg` class for custom colour, e.g. [important note]{.fg style="--col: #e64173"}.
-- `.bg` class for custom background, e.g. [important note]{.bg style="--col: #e64173"}.
+- `.fg` class for custom colour, e.g. 
+  - `[important note]{.fg style="--col: #e64173"}` produces [important note]{.fg style="--col: #e64173"}.
+- `.bg` class for custom background, e.g. 
+  - `[important note]{.bg}` produces [important note]{.bg}.
 
-Cross-references
+--- 
+### Cross-references
 
 - `.button` class provides a Beamer-like button, e.g.
-[[Summary]{.button}](#see-our-longer-demo-slides)
+  - `[[Summary]{.button}](#see-our-longer-demo-slides)` produces a button like this one [[Summary]{.button}](#see-our-longer-demo-slides)
 
-## Want more?
-
-### See our longer demo slides
-
-We've deliberarely kept this template lean, to get you up and running as fast as
-possible.
-
-We provide a separate
-[demo template](https://github.com/grantmcdermott/quarto-revealjs-clean-demo),
-with more examples for integrating code, tables, figures, etc.
-
-  - See the live demo slides
-  [here](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html).
-
-## Summary {#sec-summary}
-
-### A minimalist and elegant presentation theme
-
-The Quarto reveal.js clean theme aims to be a minimalist and elegant presention
-theme. Here are some options to get you started:
-
-Add the theme to an existing project.
-
-```{.bash}
-quarto install extension grantmcdermott/quarto-revealjs-clean
-```
-
-... or, create a new project using this slide deck as a lean template.
-
-```{.bash}
-quarto use template grantmcdermott/quarto-revealjs-clean
-```
-
-... or, create a new project using the demo slide deck as a full template.
-
-```{.bash}
-quarto use template grantmcdermott/quarto-revealjs-clean-demo
-```
 
 ## Callout Notes
 
@@ -98,12 +62,60 @@ This is an example of a callout with a title.
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
 :::
 
-# Some title {background-image="images/bg/bg-background-mayan.png"}
 
-# [Some other title]{style="color: #000000;"} {background-image="images/bg/bg-background-green-bottom.jpg"}
+## Summary {#sec-summary}
 
-## Bottom slide {background-image="images/bg/bg-background-green-bottom.jpg"}
+### A minimalist and elegant presentation theme
 
-## Side content slide {background-image="images/bg/bg-background-green-side.jpg"}
+The Quarto reveal.js clean theme aims to be a minimalist and elegant presentation theme. Here are some options to get you started:
 
+Add the theme to an existing project.
+
+```{.bash}
+quarto install extension r2cp/quarto-revealjs-clean@bg
+```
+
+... or, create a new project using this slide deck as a lean template.
+
+```{.bash}
+quarto use template r2cp/quarto-revealjs-clean@bg
+```
+
+
+
+# Example section title slide {background-image="images/bg/bg-background-mayan.png"}
+
+# Another section title {background-image="images/bg/bg-background-green-bottom.jpg"}
+
+## Slide with bottom banner {background-image="images/bg/bg-background-green-bottom.jpg"}
+
+- A
+- B
+
+## [Side content slide]{style="color: #ffffff;"} {background-image="images/bg/bg-background-green-side.jpg"}
+
+::: {.columns}
+
+::: {.column width="45%"}
+::: {.fgw}
+- A
+- B
+- C
+:::
+:::
+
+::: {.column width="55%"}
+Some more content ... 
+
+![](images/bg/bg-logo.jpg){width="50%"}
+
+Some code ... 
+```julia 
+import Pkg 
+Pkg.status()
+```
+:::
+:::
+
+<!-- End slide -->
 # {background-image="images/bg/bg-background-green-end.jpg"}

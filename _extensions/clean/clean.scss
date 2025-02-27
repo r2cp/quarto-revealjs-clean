@@ -129,6 +129,7 @@ $selection-bg: #2a5446 !default;
 
 .alert {
   color: $accent2;
+  font-weight: bolder;
 }
 
 .fg {
@@ -136,10 +137,16 @@ $selection-bg: #2a5446 !default;
 }
 
 .bg {
-  background-color: var(--col, #fff);
+  background-color: var(--col, $accent);
+  color: #fff;
   padding: 0.1em;
   border-radius: 5px;
   display: inline-block;
+}
+
+// White text color
+.fgw {
+  color: #fff; 
 }
 
 // lists
@@ -216,6 +223,11 @@ $selection-bg: #2a5446 !default;
   pointer-events: auto;
 }
 
+// Footer banner
+
+.reveal .footer > * {
+  background-color: $accent;
+}
 
 // Same for chalkboard buttons (with an offset)
 
