@@ -1,6 +1,6 @@
 title: clean
 author: Grant McDermott
-version: 1.2.0
+version: 1.4.1
 quarto-required: ">=1.3.0"
 contributes:
   formats:
@@ -15,9 +15,6 @@ contributes:
         data-background-image: images/bg/bg-background-portrait.jpg
         data-background-size: contain
       logo: images/bg/bg-logo.jpg
-      html-math-method:
-        method: mathjax
-        url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
       include-after: |
         <script type="text/javascript">
           Reveal.on('ready', event => {
@@ -36,3 +33,11 @@ contributes:
             }
           });
         </script>
+      html-math-method:
+        method: mathjax
+        url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+      include-before-body:
+        - text: |
+            <script src="mathjax-config.js"></script>
+      format-resources:
+        - mathjax-config.js
