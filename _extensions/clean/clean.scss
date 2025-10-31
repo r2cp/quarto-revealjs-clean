@@ -3,10 +3,10 @@
 // Custom colours and variables
 
 $jet: #131516;
-$accent: #213830;
-$accent2: #781f0e;
-$accent3: #c4922b;
-$tcolor: #c0c1b5; 
+$accent: #00457f;
+$accent2: #00c1eb;
+$accent3: #ff7f00;
+$tcolor: #cfb280; 
 $right-arrow: "\2192"; // Unicode character for right arrow
 
 // fonts
@@ -41,7 +41,7 @@ $presentation-font-size-root: 32px;
 //$body-bg: #f0f1eb !default;
 $body-color: $jet !default;
 $link-color: $accent !default;
-$selection-bg: #2a5446 !default;
+$selection-bg: #00457f !default;
 
 
 /*-- scss:rules --*/
@@ -59,12 +59,11 @@ $selection-bg: #2a5446 !default;
 // title and headings
 
 #title-slide {
-  text-align: left;
+  text-align: center;
 
   .title {
     color: $tcolor;
     font-size: 1.4em;
-    // font-weight: 350;
     font-weight: bold;
   }
 
@@ -72,7 +71,6 @@ $selection-bg: #2a5446 !default;
     color: $tcolor;
     font-style: italic;
     margin-top: 0em;
-    // font-weight: lighter;
   }
 
   .institute,
@@ -106,8 +104,13 @@ $selection-bg: #2a5446 !default;
 
 }
 
+.reveal h1 {
+  // color: #ffffff;
+  // background-color: $accent;
+  font-weight: bold;
+}
+
 .reveal h2 {
-  // font-weight: 350;
   font-weight: 500;
   font-size: 1.4em;
 }

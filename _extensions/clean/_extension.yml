@@ -12,9 +12,9 @@ contributes:
       show-slide-number: all 
       date-format: long
       title-slide-attributes: 
-        data-background-image: images/bg/bg-background-portrait.jpg
+        data-background-image: images/bg/bg-slide-title.jpg
         data-background-size: contain
-      logo: images/bg/bg-logo.jpg
+      # logo: images/bg/bg-logo.png
       include-after: |
         <script type="text/javascript">
           Reveal.on('ready', event => {

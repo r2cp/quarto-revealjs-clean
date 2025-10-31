@@ -81,18 +81,24 @@ quarto install extension r2cp/quarto-revealjs-clean@bg
 quarto use template r2cp/quarto-revealjs-clean@bg
 ```
 
+# Section title 0
 
+Some content. 
 
-# Example section title slide {background-image="images/bg/bg-background-mayan.png"}
+## A Slide {background-image="images/bg/bg-slide.jpg"}
 
-# Another section title {background-image="images/bg/bg-background-green-bottom.jpg"}
+Some subsection content. 
 
-## Slide with bottom banner {background-image="images/bg/bg-background-green-bottom.jpg"}
+# Section title 1 {background-image="images/bg/bg-background-blue-1.jpg" style="color: #ffffff;"}
+
+# Section title 2 {background-image="images/bg/bg-background-blue-2.jpg"}
+
+## Slide with bottom banner {background-image="images/bg/bg-background-blue-2.jpg"}
 
 - A
 - B
 
-## [Side content slide]{style="color: #ffffff;"} {background-image="images/bg/bg-background-green-side.jpg"}
+## [Side content slide]{style="color: #ffffff;"} {background-image="images/bg/bg-slide.jpg"}
 
 ::: {.columns}
 
@@ -101,13 +107,6 @@ quarto use template r2cp/quarto-revealjs-clean@bg
 - A
 - B
 - C
-:::
-:::
-
-::: {.column width="55%"}
-Some more content ... 
-
-![](images/bg/bg-logo.jpg){width="50%"}
 
 Some code ... 
 ```julia 
@@ -117,5 +116,13 @@ Pkg.status()
 :::
 :::
 
+::: {.column width="55%"}
+Some more content ... 
+
+![](images/bg/bg-logo.png){width="50%"}
+
+:::
+:::
+
 <!-- End slide -->
-# {background-image="images/bg/bg-background-green-end.jpg"}
+<!-- # {background-image="images/bg/bg-background-green-end.jpg"} -->
